@@ -1,6 +1,6 @@
 # PowerShell-Privilege-Escalation
 
-This PowerShell script demonstrates a technique known as "privilege escalation," which allows non-administrator users to run PowerShell commands with elevated privileges. The script checks whether the current user is a member of the local administrators group and, if so, runs a payload with administrative privileges. If the user is not a member of the group, the script sets an environment variable to execute a PowerShell script with elevated privileges and runs a system task to clean up disk space.
+This PowerShell script demonstrates a technique known as "privilege escalation", which allows non-administrator users to run PowerShell commands with elevated privileges. The script checks whether the current user is a member of the local administrators group and, if so, runs a payload with administrative privileges. If the user is not a member of the group, the script sets an environment variable to execute a PowerShell script with elevated privileges and runs a system task to clean up disk space.
 
 ## Usage
 
@@ -9,9 +9,11 @@ This PowerShell script demonstrates a technique known as "privilege escalation,"
 3. Navigate to the directory where the script is saved.
 4. Execute the script by running the following command:
 
-`.\UAC.ps1`
+```
+.\UAC.ps1
+```
 
-When you run the UAC.ps1 script, it will check whether the current user is a member of the local administrators group. If the user is a member, the script will execute a payload with administrative privileges. You can modify this payload to include any PowerShell commands you want to run with elevated privileges.
+When you run the `UAC.ps1` script, it will check whether the current user is a member of the local administrators group. If the user is a member, the script will execute a payload with administrative privileges. You can modify this payload to include any PowerShell commands you want to run with elevated privileges.
 
 If the user is not a member of the local administrators group, the script will set an environment variable to execute a PowerShell script with elevated privileges and run a system task to clean up disk space. You can modify the PowerShell script to include any commands you want to run with elevated privileges.
 
