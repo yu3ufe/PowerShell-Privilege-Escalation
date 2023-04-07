@@ -4,10 +4,11 @@ This PowerShell script demonstrates a technique known as "privilege escalation,"
 
 ## Usage
 
-1- Download the privilege-escalation.ps1 script from the repository.
-2- Open PowerShell terminal as a normal user.
-3- Navigate to the directory where the script is saved.
-4- Execute the script by running the following command:
+1. Download the privilege-escalation.ps1 script from the repository.
+2. Open PowerShell terminal as a normal user.
+3. Navigate to the directory where the script is saved.
+4. Execute the script by running the following command:
+
 `.\UAC.ps1`
 
 When you run the UAC.ps1 script, it will check whether the current user is a member of the local administrators group. If the user is a member, the script will execute a payload with administrative privileges. You can modify this payload to include any PowerShell commands you want to run with elevated privileges.
